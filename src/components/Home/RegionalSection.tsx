@@ -85,28 +85,56 @@ const RegionalSection = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
-          <div className="glass-card p-6">
-            <Building2 className="h-8 w-8 text-qatari mb-4" />
-            <h3 className="text-xl font-semibold mb-2">100% Foreign Ownership</h3>
-            <p className="text-gray-600">Full ownership rights across most sectors, with streamlined company registration process.</p>
+          <div className="glass-card p-6 relative overflow-hidden group">
+            <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+              <img
+                src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2070"
+                alt="Foreign Ownership"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <Building2 className="h-8 w-8 text-qatari mb-4 relative z-10" />
+            <h3 className="text-xl font-semibold mb-2 relative z-10">100% Foreign Ownership</h3>
+            <p className="text-gray-600 relative z-10">Full ownership rights across most sectors, with streamlined company registration process.</p>
           </div>
           
-          <div className="glass-card p-6">
-            <Briefcase className="h-8 w-8 text-qatari mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Investment Incentives</h3>
-            <p className="text-gray-600">Tax benefits, custom duty exemptions, and property ownership rights for foreign investors.</p>
+          <div className="glass-card p-6 relative overflow-hidden group">
+            <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+              <img
+                src="https://images.unsplash.com/photo-1460574283810-2aab119d8511?q=80&w=2070"
+                alt="Investment Incentives"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <Briefcase className="h-8 w-8 text-qatari mb-4 relative z-10" />
+            <h3 className="text-xl font-semibold mb-2 relative z-10">Investment Incentives</h3>
+            <p className="text-gray-600 relative z-10">Tax benefits, custom duty exemptions, and property ownership rights for foreign investors.</p>
           </div>
           
-          <div className="glass-card p-6">
-            <Target className="h-8 w-8 text-qatari mb-4" />
-            <h3 className="text-xl font-semibold mb-2">Strategic Location</h3>
-            <p className="text-gray-600">Gateway to MENA markets with world-class infrastructure and logistics capabilities.</p>
+          <div className="glass-card p-6 relative overflow-hidden group">
+            <div className="absolute inset-0 opacity-10 group-hover:opacity-20 transition-opacity">
+              <img
+                src="https://images.unsplash.com/photo-1551038247-3d9af20df552?q=80&w=2070"
+                alt="Strategic Location"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <Target className="h-8 w-8 text-qatari mb-4 relative z-10" />
+            <h3 className="text-xl font-semibold mb-2 relative z-10">Strategic Location</h3>
+            <p className="text-gray-600 relative z-10">Gateway to MENA markets with world-class infrastructure and logistics capabilities.</p>
           </div>
         </div>
         
         {userCountry && !isLoading && (
-          <div className="mb-12 glass-card p-8 border-2 border-qatari/10">
-            <div className="flex flex-col md:flex-row gap-6 items-start">
+          <div className="mb-12 glass-card p-8 border-2 border-qatari/10 relative overflow-hidden group">
+            <div className="absolute inset-0 opacity-5 group-hover:opacity-10 transition-opacity">
+              <img
+                src="https://images.unsplash.com/photo-1492321936769-b49830bc1d1e?q=80&w=2070"
+                alt="Country Background"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div className="flex flex-col md:flex-row gap-6 items-start relative z-10">
               <div className="flex-shrink-0 w-16 h-16 md:w-20 md:h-20 bg-gradient-to-br from-qatari to-qatari-light rounded-lg flex items-center justify-center text-4xl md:text-5xl shadow-lg">
                 {userCountry.flag}
               </div>

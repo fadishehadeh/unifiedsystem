@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { 
   ArrowRight, 
@@ -96,8 +95,9 @@ const SuccessStories = () => {
   const isMobile = useIsMobile();
   
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container-wide">
+    <section className="py-20 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-gray-50 to-white"></div>
+      <div className="container-wide relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-10">
           <div>
             <h2 className="text-3xl font-bold mb-2">Success Stories & Updates</h2>
@@ -125,12 +125,12 @@ const SuccessStories = () => {
           <TabsContent value="success">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {successStories.map((story) => (
-                <Card key={story.id} className="overflow-hidden hover:shadow-md transition-shadow">
+                <Card key={story.id} className="group overflow-hidden hover:shadow-md transition-shadow">
                   <div className="h-48 overflow-hidden">
                     <img 
                       src={story.image} 
                       alt={story.title} 
-                      className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                   </div>
                   <CardHeader>
@@ -154,20 +154,29 @@ const SuccessStories = () => {
           <TabsContent value="press">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {pressReleases.map((press) => (
-                <Card key={press.id} className="hover:shadow-md transition-shadow">
-                  <CardHeader>
-                    <CardDescription className="text-gray-500 text-sm">{press.date}</CardDescription>
-                    <CardTitle className="text-lg font-semibold line-clamp-2">{press.title}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600 line-clamp-3">{press.excerpt}</p>
-                  </CardContent>
-                  <CardFooter>
-                    <Link to={`/media-centre/press/${press.id}`} className="text-qatari font-medium text-sm flex items-center">
-                      Read Press Release
-                      <ArrowRight className="ml-1 h-4 w-4" />
-                    </Link>
-                  </CardFooter>
+                <Card key={press.id} className="group hover:shadow-md transition-shadow relative overflow-hidden">
+                  <div className="absolute inset-0 opacity-5">
+                    <img 
+                      src="https://images.unsplash.com/photo-1486718448742-163732cd1544?q=80&w=2070"
+                      alt="Background pattern"
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="relative z-10">
+                    <CardHeader>
+                      <CardDescription className="text-gray-500 text-sm">{press.date}</CardDescription>
+                      <CardTitle className="text-lg font-semibold line-clamp-2">{press.title}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-600 line-clamp-3">{press.excerpt}</p>
+                    </CardContent>
+                    <CardFooter>
+                      <Link to={`/media-centre/press/${press.id}`} className="text-qatari font-medium text-sm flex items-center">
+                        Read Press Release
+                        <ArrowRight className="ml-1 h-4 w-4" />
+                      </Link>
+                    </CardFooter>
+                  </div>
                 </Card>
               ))}
             </div>
