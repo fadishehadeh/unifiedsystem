@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { 
   Search, 
@@ -44,7 +45,7 @@ const PopularServices = () => {
   return (
     <section className="py-20 relative">
       <div 
-        className="absolute inset-0 bg-cover bg-fixed opacity-5"
+        className="absolute inset-0 bg-cover bg-fixed opacity-15"  // Increased opacity from 0.5 to 0.15
         style={{
           backgroundImage: "url('https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?q=80&w=2070')"
         }}
@@ -94,3 +95,4 @@ const PopularServices = () => {
 };
 
 export default PopularServices;
+
