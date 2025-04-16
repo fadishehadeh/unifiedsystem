@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Building2, FileText, HomeLine, FileCheck, PackageOpen, ChevronRight } from 'lucide-react';
+import { Building2, FileText, FileCheck, PackageOpen, ChevronRight } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
