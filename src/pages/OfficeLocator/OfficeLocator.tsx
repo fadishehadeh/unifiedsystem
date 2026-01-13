@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Layout from '@/components/Layout/Layout';
+import OfficeLocatorLayout from '@/components/Layout/OfficeLocatorLayout';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -47,7 +47,7 @@ const OfficeLocator = () => {
   };
 
   return (
-    <Layout>
+    <OfficeLocatorLayout>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12">
         <div className="container mx-auto px-4 max-w-6xl">
           {/* Header Section */}
@@ -159,7 +159,7 @@ const OfficeLocator = () => {
           )}
         </div>
       </div>
-    </Layout>
+    </OfficeLocatorLayout>
   );
 };
 
