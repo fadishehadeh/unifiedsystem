@@ -226,12 +226,12 @@ const UnifiedSystem: React.FC = () => {
               </div>
 
               <div className="text-center animate-fade-in" style={{ animationDelay: '0.8s' }}>
-                <div className="flex items-center justify-center gap-2 mb-4">
-                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110 hover:-translate-x-1">→</button>
-                  <button className="px-4 py-2 bg-[#345D9B] text-white rounded shadow-lg hover:shadow-xl transition-all hover:scale-110">1</button>
-                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110">2</button>
-                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110">3</button>
+                <div className="flex items-center justify-center gap-2 mb-4 flex-row-reverse">
                   <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110 hover:translate-x-1">←</button>
+                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110">3</button>
+                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110">2</button>
+                  <button className="px-4 py-2 bg-[#345D9B] text-white rounded shadow-lg hover:shadow-xl transition-all hover:scale-110">1</button>
+                  <button className="px-4 py-2 text-[#345D9B] hover:bg-gray-100 rounded transition-all hover:scale-110 hover:-translate-x-1">→</button>
                 </div>
                 <p className="text-sm text-gray-600">عرض 1 إلى 12 من 36 نتيجة</p>
               </div>

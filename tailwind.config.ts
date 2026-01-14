@@ -64,8 +64,8 @@ export default {
 				danger: '#dc3545',
 			},
 			fontFamily: {
-				sans: ['Inter var', 'Inter', 'sans-serif'],
-				display: ['Inter var', 'Inter', 'sans-serif'],
+				sans: ['Lusail', 'Inter', 'sans-serif'],
+				display: ['Lusail', 'Inter', 'sans-serif'],
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
