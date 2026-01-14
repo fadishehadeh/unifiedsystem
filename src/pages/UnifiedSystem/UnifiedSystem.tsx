@@ -79,18 +79,18 @@ const UnifiedSystem: React.FC = () => {
 
         {/* Right side - Logos */}
         <div className="flex items-center gap-6">
-          {/* MOCI Logo on the left of divider */}
+          {/* Unified Logo on the left */}
           <img
-            src="/images/logo-main-white.svg"
-            alt="MOCI Logo"
+            src="/images/unifiedlogo.png"
+            alt="Unified Logo"
             className="h-20 object-contain hover:scale-105 transition-transform"
           />
           {/* Vertical divider */}
           <div className="h-16 w-px bg-white/40"></div>
-          {/* Unified Logo on the right */}
+          {/* MOCI Logo on the right */}
           <img
-            src="/images/unifiedlogo.png"
-            alt="Unified Logo"
+            src="/images/logo-main-white.svg"
+            alt="MOCI Logo"
             className="h-20 object-contain hover:scale-105 transition-transform"
           />
         </div>
