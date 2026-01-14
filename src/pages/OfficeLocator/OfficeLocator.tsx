@@ -50,21 +50,6 @@ const OfficeLocator = () => {
     <OfficeLocatorLayout>
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-900 dark:to-gray-800 py-12">
         <div className="container mx-auto px-4 max-w-6xl">
-          {/* Header Section */}
-          <div className="text-center mb-12">
-            <div className="flex justify-center mb-6">
-              <div className="bg-qatari/10 dark:bg-qatari/20 p-6 rounded-full">
-                <Building2 className="h-16 w-16 text-qatari" />
-              </div>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
-              Office Locator
-            </h1>
-            <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
-              Find your office location in the new MOCI building
-            </p>
-          </div>
-
           {/* Search Section */}
           {!searchResult && (
             <Card className="max-w-2xl mx-auto shadow-xl border-2 border-gray-200 dark:border-gray-700">
