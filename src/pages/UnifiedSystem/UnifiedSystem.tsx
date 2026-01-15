@@ -46,13 +46,13 @@ const UnifiedSystem: React.FC = () => {
 
   const services = [
     { icon: FileText, title: 'جميع معاملاتك', titleEn: 'All Your Transactions' },
-    { icon: Building2, title: 'تغيير مقدمتها', titleEn: 'Change Submissions' },
+    { icon: Building2, title: 'التعديل على تقديم الطلب', titleEn: 'Change Submissions' },
     { icon: Clock, title: 'الحضور', titleEn: 'Attendance' },
     { icon: FileText, title: 'الأجور', titleEn: 'Wages' },
     { icon: UserPlus, title: 'إضافة موظف جديد - إقامة عمل وإصدار البطاقة', titleEn: 'Add New Employee - Work Permit & Card' },
     { icon: FileCheck, title: 'إشعار عن عدم الاستقدام', titleEn: 'Non-Recruitment Notice' },
     { icon: Briefcase, title: 'إضافة معاملة جديدة برخصة عمل جديدة', titleEn: 'Add New Transaction with Work License' },
-    { icon: Shield, title: 'إضافة مرخصة تجديد', titleEn: 'Add Renewal License' },
+    { icon: Shield, title: 'إضافة رخصة تجديد', titleEn: 'Add Renewal License' },
     { icon: Users, title: 'إضافة معاملة جديدة برخصة عمل جديدة', titleEn: 'Add New Transaction with Work License' },
     { icon: ClipboardList, title: 'إضافة مستخدم', titleEn: 'Add User' },
     { icon: FileCheck, title: 'إضافة وكيل جديد - حقوق الموظف', titleEn: 'Add New Agent - Employee Rights' },
